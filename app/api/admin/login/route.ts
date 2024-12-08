@@ -35,7 +35,7 @@ export async function POST(request: Request) {
       );
     } else {
       const token = await createToken(user.email, user.id);
-      cookies().set("access_token", token);
+      (await cookies()).set("access_token", token);
 
       return NextResponse.json(
         {

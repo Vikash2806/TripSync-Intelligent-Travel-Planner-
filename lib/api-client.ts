@@ -19,8 +19,8 @@ import axios from "axios";
 // If your website's backend API (where data is stored) is at `https://mywebsite.com/api`,
 // you can set `baseURL` to `/api` to simplify requests like `/api/users`.
 
-const apiClient = axios.create({
+export const apiClient = axios.create({
   baseURL: `/api`,
 });
 
-export default apiClient;
+

@@ -10,10 +10,10 @@ import {
 } from "@nextui-org/react";
 import { Architects_Daughter } from "next/font/google";
 import Image from "next/image";
-// import { useRouter } from "next/navigation";
-// import { apiClient } from "@/lib";
+import { useRouter } from "next/navigation";
+import { apiClient } from "@/lib";
 // import { useAppStore } from "@/store";
-// import { ADMIN_API_ROUTES } from "@/utils/api-routes";
+import { ADMIN_API_ROUTES } from "@/utils/api-routes";
 
 const ArchitectsDaughter = Architects_Daughter({
   weight: "400", // if single weight, otherwise you use array like [400, 500, 700],
@@ -22,19 +22,19 @@ const ArchitectsDaughter = Architects_Daughter({
 });
 
 const Login = () => {
-  // const router = useRouter();
+  const router = useRouter();
   // const { setUserInfo } = useAppStore();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const handleLogin = async () => {
-    // const response = await apiClient.post(ADMIN_API_ROUTES.LOGIN, {
-    //   email,
-    //   password,
-    // });
-    // if (response.data.userInfo) {
-    //   setUserInfo(response.data.userInfo);
-    //   router.push("/admin");
-    // }
+    const response = await apiClient.post(ADMIN_API_ROUTES.LOGIN, {
+      email,
+      password,
+    });
+    if (response.data.userInfo) {
+      // setUserInfo(response.data.userInfo);
+      // router.push("/admin");
+    }
   };
 
   return (
