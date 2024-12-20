@@ -27,7 +27,9 @@ Here are some of the project's best features:
 
 🛠️ Installation Steps:
 1. Install Dependencies
+ ```text
    >>npm i
+```
 3. Setup PostgreSQL in the .env and generate prisma schema
    >>npx prisma generate
 3. Push Prisma changes
