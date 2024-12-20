@@ -27,15 +27,21 @@ Here are some of the project's best features:
 
 🛠️ Installation Steps:
 1. Install Dependencies
- ```text
-   >>npm i
+ ```
+   npm i
 ```
 3. Setup PostgreSQL in the .env and generate prisma schema
-   >>npx prisma generate
+ ```
+   npx prisma generate
+```
 3. Push Prisma changes
-   >>npx prisma db push
+ ```
+   npx prisma db push
+```
 5. Start the app
-   >>npm run dev
+   ```
+   npm run dev
+   ```
    
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
