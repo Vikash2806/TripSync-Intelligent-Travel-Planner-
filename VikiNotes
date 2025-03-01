@@ -1,0 +1,164 @@
+Folder Structure : 
+prisma
+│── schema.prisma
+public
+│── gradients
+│── home
+│── loaders
+│── randomImages
+│   │── flight-search.png
+│   │── hotel-search.png
+│   │── logo.png
+│   │── next.svg
+│   │── vercel.svg
+src
+│── app
+│   │── admin
+│   │   │── bookings
+│   │   │   │── layout.tsx
+│   │   │   │── page.tsx
+│   │   │── dashboard
+│   │   │   │── components
+│   │   │   │── layout.tsx
+│   │   │   │── page.tsx
+│   │   │── hotels
+│   │   │   │── layout.tsx
+│   │   │   │── page.tsx
+│   │   │── login
+│   │   │   │── page.tsx
+│   │   │── logout
+│   │   │   │── actions.tsx
+│   │   │   │── page.tsx
+│   │   │── scrape-data
+│   │   │   │── components
+│   │   │   │   │── currently-scraping-table
+│   │   │   │   │   │── currently-scraping-table.tsx
+│   │   │   │── index.ts
+│   │   │   │── layout.tsx
+│   │   │   │── page.tsx
+│   │   │── trips
+│   │   │   │── layout.tsx
+│   │   │   │── page.tsx
+│   │   │   │── page.tsx
+│   │── api
+│   │   │── admin
+│   │   │   │── createJob
+│   │   │   │   │── route.ts
+│   │   │   │── dashboard
+│   │   │   │   │── metrics
+│   │   │   │   │   │── route.ts
+│   │   │   │── scraping-chart-data
+│   │   │   │   │── route.ts
+│   │   │   │── jobDetails
+│   │   │   │   │── route.ts
+│   │   │   │── login
+│   │   │   │   │── route.ts
+│   │   │── all-hotels
+│   │   │   │── route.ts
+│   │   │── all-trips
+│   │   │   │── route.ts
+│   │   │── auth
+│   │   │   │── login
+│   │   │   │   │── route.ts
+│   │   │   │── me
+│   │   │   │── signup
+│   │   │   │   │── route.ts
+│   │   │── booking
+│   │   │   │── get-bookings
+│   │   │   │   │── route.ts
+│   │   │   │── route.ts
+│   │   │── city-trips
+│   │   │── flights
+│   │   │── home
+│   │   │── hotels
+│   │   │── trips
+│   │── checkout
+│   │   │── flights
+│   │   │── hotels
+│   │   │── page.tsx
+│   │── layouts
+│   │   │── admin-layout.ts
+│   │   │── client-layout.ts
+│   │── logout
+│   │   │── actions.tsx
+│   │   │── page.tsx
+│   │── my-bookings
+│   │   │── page.tsx
+│   │── search-flights
+│   │── search-hotels
+│   │── signup
+│   │   │── page.tsx
+│   │── success
+│   │   │── page.tsx
+│   │── trips
+│   │   │── PageLayout.tsx
+│   │── app-protector.ts
+│   │── favicon.ico
+│   │── globals.css
+│   │── layout.tsx
+│   │── page.tsx
+│   │── providers.tsx
+│── components
+│   │── admin
+│   │   │── scraping-queue
+│   │   │   │── scraping-queue.tsx
+│   │   │── sidebar
+│   │   │   │── sidebar.tsx
+│   │── auth-modal
+│   │   │── auth-modal.tsx
+│   │   │── index.ts
+│   │── footer
+│   │   │── footer.tsx
+│   │   │── index.ts
+│   │── home
+│   │   │── benefits
+│   │   │   │── benefits.tsx
+│   │   │   │── index.ts
+│   │   │── featured
+│   │   │   │── featured.tsx
+│   │   │   │── index.ts
+│   │   │── search
+│   │   │   │── index.ts
+│   │   │   │── search.tsx
+│   │   │── suggestions
+│   │   │   │── index.ts
+│   │   │   │── suggestions.tsx
+│   │── loaders
+│   │── navbar
+│   │   │── index.ts
+│   │   │── navbar.tsx
+│── lib
+│   │── api-client.ts
+│   │── index.ts
+│   │── prisma.ts
+│   │── queue.ts
+│   │── redis.ts
+│── scraping
+│   │── flightsScraping.ts
+│   │── hotelScraping.ts
+│   │── hotelsScraping.ts
+│   │── locationScraping.ts
+│   │── packageScraping.ts
+│── store
+│   │── slices
+│   │   │── auth-slice.ts
+│   │   │── index.ts
+│   │   │── scraping-slice.ts
+│   │   │── index.ts
+│   │── store.ts
+│── types
+│── utils
+│   │── api-routes.ts
+│   │── city-airport-codes.ts
+│   │── index.ts
+│   │── remove-html-tags.ts
+│── instrumentation.ts
+│── middleware.ts
+│── .eslintrc.json
+│── .gitignore
+│── Dockerfile
+│── README.md
+│── VikiNotes
+│── next.config.js
+│── package-lock.json
+│── package.json
